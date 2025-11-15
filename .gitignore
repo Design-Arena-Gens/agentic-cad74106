@@ -29,7 +29,7 @@ lerna-debug.log*
 pnpm-debug.log*
 
 # Package manager lock files
-package-lock.json
+!package-lock.json
 yarn.lock
 pnpm-lock.yaml
 .pnpm-store/
@@ -112,7 +112,6 @@ dist/
 
 # Gatsby files
 .cache/
-public/
 .gatsby-cache/
 
 # Storybook build outputs
@@ -881,6 +880,13 @@ venv.bak/
 # Data files
 *.csv
 *.json
+!package.json
+!package-lock.json
+!tsconfig.json
+
+# Allow static assets directory for Next.js
+!public/
+!public/**
 *.xml
 *.parquet
 data/
